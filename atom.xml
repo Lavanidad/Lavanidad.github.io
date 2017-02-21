@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>DeepSpring&#39;Blog</title>
-  <subtitle>--to be free</subtitle>
+  <subtitle>--Finding</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-18T13:20:40.034Z</updated>
+  <updated>2017-02-21T14:14:22.160Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,13 +16,82 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>手把手系列之——利用Github+Hexo搭建博客</title>
+    <link href="http://yoursite.com/2017/02/21/%E6%89%8B%E6%8A%8A%E6%89%8B%E7%B3%BB%E5%88%97%E4%B9%8B%E2%80%94%E2%80%94%E5%88%A9%E7%94%A8Github+Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2017/02/21/手把手系列之——利用Github+Hexo搭建博客/</id>
+    <published>2017-02-21T13:53:48.791Z</published>
+    <updated>2017-02-21T14:14:22.160Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>重新开启了博客，之前一直觉得博客是用来分享很牛逼的技术或者复杂的Debug过程，然后发现自己并没有什么可以分享……这次不一样了，准备分享一些coding的日常吧。  </p>
+<p>Ps:博客里的文章都是本人或者小伙伴原创的，内容可能网上也有类似的，但是绝对不存在抄袭，参考的资料或者内容很好的博客我会在文章结尾贴出链接。</p>
+<h2 id="搭建博客前的准备"><a href="#搭建博客前的准备" class="headerlink" title="搭建博客前的准备"></a>搭建博客前的准备</h2><ul>
+<li>Github账号</li>
+<li>git</li>
+<li>node.js</li>
+</ul>
+<h2 id="在Github上创建博客："><a href="#在Github上创建博客：" class="headerlink" title="在Github上创建博客："></a>在Github上创建博客：</h2><ul>
+<li>第一步：新建仓库，仓库名为:  </li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Username.github.io  例如:Lavanidad.github.io</div></pre></td></tr></table></figure>
+<ul>
+<li>第二步：建好之后进入项目中的Settings,选择一个theme之后，你的Github Pages就完成了。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">我是图T。T  小伙伴说周四他来补图![GithubSetting]()</div></pre></td></tr></table></figure>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><ul>
+<li>新建一个目录，在该目录下打开Git Bash，输入</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
+<ul>
+<li>等待一会出现WARN 后接着输入</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo --save</div></pre></td></tr></table></figure>
+<ul>
+<li>这样就安装完成了，接下来开始初始化Hexo并静态化处理</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init  </div><div class="line">hexo -g</div></pre></td></tr></table></figure>
+<ul>
+<li>打开本地服务器，访问localhost:4000，查看博客</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="_">-s</span></div></pre></td></tr></table></figure>
+<h2 id="将Hexo博客部署到Github上"><a href="#将Hexo博客部署到Github上" class="headerlink" title="将Hexo博客部署到Github上"></a>将Hexo博客部署到Github上</h2><ul>
+<li>打开根目录中的_config.yml，找到deploy  </li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">我是图T。T  小伙伴说周四他来补图</div></pre></td></tr></table></figure>
+<ul>
+<li><p>输入<code>hexo g -d</code>，将博客静态化后发布到Github</p>
+</li>
+<li><p>FAQ:输入命令<code>hexo -d</code> 出现 <code>not found git</code> 的解决办法</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h2 id="装扮你的博客"><a href="#装扮你的博客" class="headerlink" title="装扮你的博客"></a>装扮你的博客</h2><p>网上有各种各样的主题可供使用，推荐几个时下流行的。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/iissnan/hexo-theme-next</div></pre></td></tr></table></figure>
+<p>这个是我现在正在使用的主题，样式简约，配套的文档十分齐全，按着文档做下来你可以得到一个功能齐全的个人博客了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/viosey/hexo-theme-material</div></pre></td></tr></table></figure>
+<p>强烈推荐这一个，融入<code>Material-Design</code>设计，就像介绍的一样，或许是现在 <code>Hexo 最酷的 Material Design 主题</code>。喜欢个性化定制化的小伙伴们绝不可以错过！</p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>第一篇博文，感觉写的比较乱，想到哪写到哪，但是具体的步骤应该都写全了，如果还有疑问请在评论下留言，我会尽快回复。  </p>
+<p>下一篇准备继续手把手系列，一步一步做一个小小App 反正会是 something about Android。博客更新的比较慢，毕竟要等项目做完没有Bug才能拿出来分享，推荐关注我的 Github (#滑稽)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;重新开启了博客，之前一直觉得博客是用来分享很牛逼的技术或者复杂的Debug过程，然后发现自己并没有什么可以分享……这次不一样了，准备分享一些
+    
+    </summary>
+    
+    
+      <category term="hexo 手把手" scheme="http://yoursite.com/tags/hexo-%E6%89%8B%E6%8A%8A%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://yoursite.com/2017/02/18/hello-world/"/>
     <id>http://yoursite.com/2017/02/18/hello-world/</id>
     <published>2017-02-18T13:20:40.034Z</published>
-    <updated>2017-02-18T13:20:40.034Z</updated>
+    <updated>2017-02-21T14:15:01.083Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! </p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
@@ -35,7 +104,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! &lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;he
     
     </summary>
     
