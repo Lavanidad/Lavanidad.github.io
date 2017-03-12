@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-23T14:21:59.262Z</updated>
+  <updated>2017-03-12T14:03:27.710Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/02/21/%E6%89%8B%E6%8A%8A%E6%89%8B%E7%B3%BB%E5%88%97%E4%B9%8B%E2%80%94%E2%80%94%E5%88%A9%E7%94%A8Github+Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2017/02/21/手把手系列之——利用Github+Hexo搭建博客/</id>
     <published>2017-02-21T13:53:48.791Z</published>
-    <updated>2017-02-23T14:21:59.262Z</updated>
+    <updated>2017-03-12T14:03:27.710Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>重新开启了博客，之前一直觉得博客是用来分享很牛逼的技术或者复杂的Debug过程，然后发现自己并没有什么可以分享……这次不一样了，准备分享一些coding的日常吧。  </p>
 <p>Ps:博客里的文章都是本人或者小伙伴原创的，内容可能网上也有类似的，但是绝对不存在抄袭，参考的资料或者内容很好的博客我会在文章结尾贴出链接。</p>
@@ -36,7 +36,7 @@
 <ul>
 <li>第二步：建好之后进入项目中的Settings,选择一个theme之后，你的Github Pages就完成了。</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">我是图T。T  周末补图[GithubSetting]()</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><ul>
 <li>新建一个目录，在该目录下打开Git Bash，输入</li>
 </ul>
@@ -56,7 +56,7 @@
 <h2 id="将Hexo博客部署到Github上"><a href="#将Hexo博客部署到Github上" class="headerlink" title="将Hexo博客部署到Github上"></a>将Hexo博客部署到Github上</h2><ul>
 <li>打开根目录中的_config.yml，找到deploy  </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">我是图T。T  周末补图</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
 <ul>
 <li><p>输入<code>hexo g -d</code>，将博客静态化后发布到Github</p>
 </li>
